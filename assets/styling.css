@@ -1,9 +1,12 @@
 body {
-    background: repeating-linear-gradient(
-            90deg,
-            rgb(0, 0, 0),
-            rgb(6, 41, 17) 10px,
-            rgb(0, 0, 0) 10px,
-            rgb(6, 41, 17) 20px);
+
+    /* background: repeating-radial-gradient(rgba(101, 40, 207), rgb(151, 232, 126) 20%); */
+    /* background: repeating-radial-gradient(circle at 100%, #333, #333 10px, #eee 10px, #eee 20px); radial gradient but positioned to the left */
+    background: linear-gradient(
+        to right,
+        rgb(69, 25, 145),
+        rgb(27, 66, 16) 100%
+    );
     color: lightgray;
+    overflow: hidden;
 }
