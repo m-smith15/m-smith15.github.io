@@ -12,13 +12,15 @@ body {
 
 .indexPage{
     height:100vh;
-
-    background-image: url('/m-smith15.github.io/assets/astronaut_campfire.png'), linear-gradient(to right,
+    background: url('/m-smith15.github.io/assets/astronaut_campfire.png'), linear-gradient(to right,
             rgb(69, 25, 145),
-            rgb(27, 66, 16) 100%);
+            rgb(27, 66, 16));
     background-position-x: center;
     background-repeat: no-repeat;
-    background-position-y: -2%;
-    background-size:contain;
+    background-position-y: 38%;
+}
 
+.credits {
+    position:fixed;
+    bottom:0%;
 }
