@@ -2,11 +2,23 @@ body {
 
     /* background: repeating-radial-gradient(rgba(101, 40, 207), rgb(151, 232, 126) 20%); */
     /* background: repeating-radial-gradient(circle at 100%, #333, #333 10px, #eee 10px, #eee 20px); radial gradient but positioned to the left */
-    background: linear-gradient(
-        to right,
-        rgb(69, 25, 145),
-        rgb(27, 66, 16) 100%
-    );
-    color: lightgray;
+    /* background: linear-gradient(to right,
+            rgb(69, 25, 145),
+            rgb(27, 66, 16)); */
+    color: black;
+    font-weight:bold;
     overflow: hidden;
+}
+
+.indexPage{
+    height:100vh;
+
+    background-image: url('/m-smith15.github.io/assets/astronaut_campfire.png'), linear-gradient(to right,
+            rgb(69, 25, 145),
+            rgb(27, 66, 16) 100%);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-position-y: -2%;
+    background-size:contain;
+
 }
