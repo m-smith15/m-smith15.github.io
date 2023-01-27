@@ -1,0 +1,113 @@
+/* bravo if you've found this! Here are a few ideas of backgrounds that I played around with, but wasn't quite read to hit delete on */
+/* background: repeating-radial-gradient(rgba(101, 40, 207), rgb(151, 232, 126) 20%); */
+/* background: repeating-radial-gradient(circle at 100%, #333, #333 10px, #eee 10px, #eee 20px); radial gradient but positioned to the left */
+/* background: linear-gradient(to right,
+        rgb(69, 25, 145),
+        rgb(27, 66, 16)); */
+/* background: url('astronaut_campfire.png'), linear-gradient(to right,
+                rgb(69, 25, 145),
+                rgb(27, 66, 16));
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-position-y: 38%; */
+
+body {
+    color: Lightgrey;
+    font-weight:bold;
+    overflow: hidden;
+}
+h1{
+    color:lightgray;
+}
+ul{
+    list-style:none;
+}
+.project-slideshow,
+.project-slideshow:after {
+    position: fixed;
+    width: 15%;
+    height: 15%;
+    top: 30%;
+    left: 10%;
+    z-index: 0;
+}
+.project-slideshow:after {
+    content: '';
+}
+.project-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 18s linear infinite 0s;
+}
+.project-slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: -5%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 18s linear infinite 0s;
+    visibility: hidden;
+}
+.project-slideshow li div h3 {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding: 0;
+}
+
+.project-slideshow li:nth-child(1) span {
+    background-image: url('assets/project_images/ironforge-auctionhouse.jpg');
+}
+.project-slideshow li:nth-child(2) span {
+    background-image: url('assets/project_images/dos_background.jpg');
+    animation-delay: 6s;
+}
+.project-slideshow li:nth-child(3) span {
+    background-image: url('assets/project_images/typewriter_wallpaper\(1920x1080\).jpg');
+    animation-delay: 12s;
+}
+
+.project-slideshow li:nth-child(2) div {
+    animation-delay: 6s;
+}
+.project-slideshow li:nth-child(3) div {
+    animation-delay: 12s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out;}
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes titleAnimation {
+    0% { opacity: 0 }
+    8% { opacity: 1; visibility: visible;}
+    17% { opacity: 1 }
+    19% { opacity: 0; visibility: hidden;}
+    100% { opacity: 0 }
+}
+.siteWrapper{
+    height:100vh;
+    background: url('assets/island_house.jpg');
+}
+.siteWrapper h1{
+    padding-top:10px;
+    text-align:center;
+}
+.credits {
+    position:fixed;
+    bottom:0%;
+}
