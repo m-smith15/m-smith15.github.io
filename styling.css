@@ -75,7 +75,7 @@ ul{
 .project-slideshow li div {
     z-index: 1000;
     position: absolute;
-    bottom: -5%;
+    bottom: 1%;
     left: 0px;
     width: 100%;
     text-align: center;
@@ -132,6 +132,14 @@ ul{
     height:5%;
     width:5%;
     border:solid 2px black;
+}
+.resumeImage{
+    position:fixed;
+    top:31%;
+    left:79%;
+}
+.resumeImage img {
+    width:25%;
 }
 
 .siteWrapper{
