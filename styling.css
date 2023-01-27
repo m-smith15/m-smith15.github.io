@@ -11,6 +11,10 @@
         background-repeat: no-repeat;
         background-position-y: 38%; */
 
+*{
+padding:0;
+margin:0;
+}
 body {
     color: Lightgrey;
     font-weight:bold;
@@ -23,16 +27,24 @@ ul{
     list-style:none;
 }
 
-.contentWrapper .projectsHeader{
+.contentWrapper h2{
     position:fixed;
     width:15%;
     height: 15%;
     top:23%;
-    left:10%;
     text-align:center;
     font-weight:bold;
     font-style:italic;
     color:black;
+}
+.contentWrapper .projectsHeader {
+    left:10%;
+}
+.contentWrapper .socials {
+    left:42%;
+}
+.contentWrapper .resume {
+    left:74%;
 }
 .project-slideshow,
 .project-slideshow:after {
@@ -111,6 +123,17 @@ ul{
     19% { opacity: 0; visibility: hidden;}
     100% { opacity: 0 }
 }
+.socialsImages{
+    position:fixed;
+    top:35%;
+    left:47%;
+}
+.socialsImages img{
+    height:5%;
+    width:5%;
+    border:solid 2px black;
+}
+
 .siteWrapper{
     height:100vh;
     background: url('assets/island_house.jpg');
