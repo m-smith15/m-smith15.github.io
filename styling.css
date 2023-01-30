@@ -46,6 +46,10 @@ ul{
 .contentWrapper .resume {
     left:74%;
 }
+.contentWrapper .aboutMe{
+    left: 74%;
+    top:51%
+}
 .project-slideshow,
 .project-slideshow:after {
     position: fixed;
@@ -140,6 +144,15 @@ ul{
 }
 .resumeImage img {
     width:25%;
+}
+.aboutMeWrapper{
+    position:fixed;
+    top:58%;
+    left:69%;
+    border:solid 2px black;
+    height: 35%;
+    width: 25%;
+    color:black;
 }
 
 .siteWrapper{
