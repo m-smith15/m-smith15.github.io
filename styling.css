@@ -147,12 +147,18 @@ ul{
 }
 .aboutMeWrapper{
     position:fixed;
-    top:58%;
+    top:56%;
     left:69%;
-    border:solid 2px black;
     height: 35%;
     width: 25%;
+}
+.aboutMeWrapper p {
+    text-align:center;
+    line-height:120%;
     color:black;
+    background-color:lightgray;
+    opacity: .9;
+    border-radius:10%;
 }
 
 .siteWrapper{
