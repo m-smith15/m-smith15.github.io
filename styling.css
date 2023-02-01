@@ -31,7 +31,7 @@ ul{
     position:fixed;
     width:15%;
     height: 15%;
-    top:23%;
+    top:49%;
     text-align:center;
     font-weight:bold;
     font-style:italic;
@@ -47,15 +47,15 @@ ul{
     left:74%;
 }
 .contentWrapper .aboutMe{
-    left: 74%;
-    top:51%
+    left: 10%;
+    top:13%
 }
 .project-slideshow,
 .project-slideshow:after {
     position: fixed;
     width: 15%;
     height: 15%;
-    top: 30%;
+    top: 53%;
     left: 10%;
     z-index: 0;
 }
@@ -129,7 +129,7 @@ ul{
 }
 .socialsImages{
     position:fixed;
-    top:32%;
+    top:56%;
     left:45%;
 }
 .socialsImages img{
@@ -139,7 +139,7 @@ ul{
 }
 .resumeImage{
     position:fixed;
-    top:29%;
+    top:53%;
     left:79%;
 }
 .resumeImage img {
@@ -147,8 +147,8 @@ ul{
 }
 .aboutMeWrapper{
     position:fixed;
-    top:56%;
-    left:69%;
+    top:13%;
+    left:6%;
     height: 35%;
     width: 25%;
 }
@@ -156,7 +156,7 @@ ul{
     text-align:center;
     line-height:120%;
     color:black;
-    background-color:#d4c5d8;
+    background-color:#ddf4e2;
     opacity: .9;
     border-radius:10%;
 }
@@ -167,7 +167,7 @@ ul{
 }
 .siteWrapper h1{
     padding-top:3%;
-    text-align:center;
+    padding-left:13%;
 }
 .credits {
     position:fixed;
