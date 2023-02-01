@@ -163,7 +163,7 @@ ul{
 
 .siteWrapper{
     height:100vh;
-    background: url('assets/island_house.jpg');
+    background: url('assets/island_house.jpg') no-repeat;
 }
 .siteWrapper h1{
     padding-top:3%;
