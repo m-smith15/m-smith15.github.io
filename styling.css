@@ -1,4 +1,4 @@
-/* bravo if you've found this! Here are a few ideas of backgrounds that I played around with, but wasn't quite read to hit delete on */
+/* bravo if you've found this! Here are a few ideas of backgrounds that I played around with, but wasn't quite ready to hit delete on */
 /* background: repeating-radial-gradient(rgba(101, 40, 207), rgb(151, 232, 126) 20%); */
 /* background: repeating-radial-gradient(circle at 100%, #333, #333 10px, #eee 10px, #eee 20px); radial gradient but positioned to the left */
 /* background: linear-gradient(to right,
@@ -26,9 +26,34 @@ h1{
 ul{
     list-style:none;
 }
+.siteWrapper{
+    display:flex;
+    background: url('assets/island_house.jpg') no-repeat;
+}
+.siteWrapper h1{
+    padding-top:3%;
+    padding-left:13%;
+}
+.aboutMeWrapper{
+    /* position:fixed; */
+    display:inline-block;
+    top:13%;
+    left:6%;
+    height: 35%;
+    width: 25%;
+    overflow:scroll; /* look into how to change default scroll bars */
+}
+.aboutMeWrapper p {
+    text-align:center;
+    line-height:120%;
+    color:black;
+    background-color:#ddf4e2;
+    opacity: .9;
+    border-radius:10%;
+}
 
 .contentWrapper h2{
-    position:fixed;
+    /* position:fixed; */
     width:15%;
     height: 15%;
     top:49%;
@@ -52,7 +77,7 @@ ul{
 }
 .project-slideshow,
 .project-slideshow:after {
-    position: fixed;
+    /* position: fixed; */
     width: 15%;
     height: 15%;
     top: 53%;
@@ -63,9 +88,9 @@ ul{
     content: '';
 }
 .project-slideshow li span {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    width: 15%;
+    height: 15%;
+    /* position: absolute; */
     top: 0px;
     left: 0px;
     color: transparent;
@@ -79,7 +104,7 @@ ul{
 }
 .project-slideshow li div {
     z-index: 1000;
-    position: absolute;
+    /* position: absolute; */
     bottom: 1%;
     left: 0px;
     width: 100%;
@@ -130,7 +155,7 @@ ul{
     100% { opacity: 0 }
 }
 .socialsImages{
-    position:fixed;
+    /* position:fixed; */
     top:56%;
     left:45%;
 }
@@ -140,39 +165,15 @@ ul{
     border:solid 2px black;
 }
 .resumeImage{
-    position:fixed;
+    /* position:fixed; */
     top:53%;
     left:79%;
 }
 .resumeImage img {
     width:25%;
 }
-.aboutMeWrapper{
-    position:fixed;
-    top:13%;
-    left:6%;
-    height: 35%;
-    width: 25%;
-}
-.aboutMeWrapper p {
-    text-align:center;
-    line-height:120%;
-    color:black;
-    background-color:#ddf4e2;
-    opacity: .9;
-    border-radius:10%;
-}
-
-.siteWrapper{
-    height:100vh;
-    background: url('assets/island_house.jpg') no-repeat;
-}
-.siteWrapper h1{
-    padding-top:3%;
-    padding-left:13%;
-}
 .credits {
-    position:fixed;
+    /* position:fixed; */
     bottom:0%;
 }
 .playPauseButton{
