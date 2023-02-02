@@ -13,59 +13,74 @@
 
 <body>
     <div class="siteWrapper">
-        <h1>Hi, I'm Mack. <br /></h1>
+        <h1 class="aboutMeHeader">Hi, I'm Mack. <br /></h1>
         <div class="aboutMeWrapper">
             <p>
                 I'm a full stack developer. <br>
-                In 2022 I realized something needed to change but I wasn't quite sure what or how - so I changed everything. I took a leap of faith and embarked to reinvent myself. <br/><br/> Eventually, I found my love of coding through burgers.<br />
-                Well, building a "create your own burger" application. Okay so it wasn’t an application, it was a very small step in a free course to learn about programming. The step was to list your favorite burger toppings in an unordered list. My mind took off at the idea of giving users the option to share with me their ideal burger. <br /><br />
-                Since then, I've continued to tinker with coding almost every day - eventually enrolling and completing a Coding Bootcamp through Coding Dojo. I'm always learning, and always discovering.
+                In 2022 I realized something needed to change but I wasn't quite sure what or how - so I changed
+                everything. I took a leap of faith and embarked to reinvent myself. <br /><br /> Eventually, I found my
+                love of coding through burgers.<br />
+                Well, building a "create your own burger" application. Okay so it wasn’t an application, it was a very
+                small step in a free course to learn about programming. The step was to list your favorite burger
+                toppings in an unordered list. My mind took off at the idea of giving users the option to share with me
+                their ideal burger. <br /><br />
+                Since then, I've continued to tinker with coding almost every day - eventually enrolling and completing
+                a Coding Bootcamp through Coding Dojo. I'm always learning, and always discovering.
             </p>
         </div>
+        <!-- about section End-->
         <div class="contentWrapper">
-            <h2 class="projectsHeader">Projects
-                <button class="playPauseButton" onClick={updateAnimations()}> </button>
-            </h2>
-            <ul class="project-slideshow">
-                <li>
-                    <span>Offline Auction House</span>
-                    <div>
-                        <h3><button><a href="https://github.com/m-smith15/Projects/tree/master/Python/wow_ah_project"
-                                    target="_blank">Python - Offline Auction House</a></button></h3>
-                    </div>
-                </li>
-                <li>
-                    <span>DoS Character Builder</span>
-                    <div>
-                        <h3><button><a href="https://github.com/m-smith15/Projects/tree/master/Java"
-                                    target="_blank">Java - Character Builder</a></button></h3>
-                    </div>
-                </li>
-                <li>
-                    <span>WebDev Flashcards</span>
-                    <div>
-                        <h3><button><a href="https://github.com/m-smith15/webdev_flashcards" target="_blank">MERN - WebDev
-                                    Flashcards</a></button></h3>
-                    </div>
-                </li>
-            </ul>
+            <div class="projects">
+                <h2 class="projectsHeader">Projects
+                    <button class="playPauseButton" onClick={updateAnimations()}> </button>
+                </h2>
+                <ul class="project-slideshow">
+                    <li>
+                        <span>Offline Auction House</span>
+                        <div>
+                            <h3><button><a
+                                        href="https://github.com/m-smith15/Projects/tree/master/Python/wow_ah_project"
+                                        target="_blank">Python - Offline Auction House</a></button></h3>
+                        </div>
+                    </li>
+                    <li>
+                        <span>DoS Character Builder</span>
+                        <div>
+                            <h3><button><a href="https://github.com/m-smith15/Projects/tree/master/Java"
+                                        target="_blank">Java - Character Builder</a></button></h3>
+                        </div>
+                    </li>
+                    <li>
+                        <span>WebDev Flashcards</span>
+                        <div>
+                            <h3><button><a href="https://github.com/m-smith15/webdev_flashcards" target="_blank">MERN -
+                                        WebDev
+                                        Flashcards</a></button></h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <!-- Project Slideshow END -->
 
-            <h2 class="socials">Socials</h2>
-            <div class="socialsImages">
-                <a href="https://github.com/m-smith15" target="_blank">
-                    <img src="assets/project_images/github_icon.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/macksmithlambeau/" target="_blank">
-                    <img src="assets/project_images/linkedin_icon.png" alt="linkedin"></a>
-                <a href="mailto:averagegupi322+career@gmail.com" target="_blank">
-                    <img src="assets/project_images/email_icon.png" alt="linkedin"></a>
+            <div class="socials">
+                <h2 class="socialsHeader">Socials</h2>
+                <div class="socialsImages">
+                    <a href="https://github.com/m-smith15" target="_blank">
+                        <img src="assets/project_images/github_icon.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/macksmithlambeau/" target="_blank">
+                        <img src="assets/project_images/linkedin_icon.png" alt="linkedin"></a>
+                    <a href="mailto:averagegupi322+career@gmail.com" target="_blank">
+                        <img src="assets/project_images/email_icon.png" alt="linkedin"></a>
+                </div>
             </div>
             <!-- Socials End -->
 
-            <h2 class="resume">Resume</h2>
-            <div class="resumeImage">
-                <a href="assets/project_images/downloads/macksmith_resume_pdf.pdf" download target="_blank"><img
-                        src="assets/project_images/resume_icon.png" alt="resume"></a>
+            <div class="resume">
+                <h2 class="resumeHeader">Resume</h2>
+                <div class="resumeImage">
+                    <a href="assets/project_images/downloads/macksmith_resume_pdf.pdf" download target="_blank"><img
+                            src="assets/project_images/resume_icon.png" alt="resume"></a>
+                </div>
             </div>
             <!-- Resume End -->
 
@@ -74,7 +89,8 @@
         </div>
 
         <div class="credits">Favicon created by
-            <a href="https://www.flaticon.com/free-icons/artist" target="_blank" title="artist icons">Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/artist" target="_blank" title="artist icons">Freepik -
+                Flaticon</a>
         </div>
         <!-- site wrapper end -->
     </div>
