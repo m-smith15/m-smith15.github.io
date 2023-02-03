@@ -26,9 +26,13 @@ h1{
 ul{
     list-style:none;
 }
+.background{
+    z-index: -1;
+}
 .siteWrapper{
-    display:flex;
+    /* display:flex; */
     background: url('assets/island_house.jpg') no-repeat;
+    height:1920px;
 }
 .siteWrapper h1{
     padding-top:3%;
@@ -37,11 +41,12 @@ ul{
 .aboutMeWrapper{
     /* position:fixed; */
     display:inline-block;
-    top:13%;
-    left:6%;
-    height: 35%;
+    /* top:13%;
+    left:6%; */
+    /* height: 35%; */
     width: 25%;
-    overflow:scroll; /* look into how to change default scroll bars */
+    padding-left:6%;
+    /* overflow:scroll; look into how to change default scroll bars */
 }
 .aboutMeWrapper p {
     text-align:center;
@@ -51,18 +56,25 @@ ul{
     opacity: .9;
     border-radius:10%;
 }
+.contentWrapper {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top:5%;
+}
 
 .contentWrapper h2{
     /* position:fixed; */
-    width:15%;
+    /* width:15%;
     height: 15%;
-    top:49%;
+    top:49%; */
     text-align:center;
     font-weight:bold;
     font-style:italic;
     color:black;
+    /* display:flex; */
 }
-.contentWrapper .projectsHeader {
+/* .contentWrapper .projectsHeader {
     left:10%;
 }
 .contentWrapper .socials {
@@ -70,10 +82,14 @@ ul{
 }
 .contentWrapper .resume {
     left:74%;
-}
+} */
 .contentWrapper .aboutMe{
     left: 10%;
     top:13%
+}
+.projects{
+    display:flex;
+    flex-flow:column nowrap;
 }
 .project-slideshow,
 .project-slideshow:after {
@@ -82,38 +98,45 @@ ul{
     height: 15%;
     top: 53%;
     left: 10%;
-    z-index: 0;
+    /* z-index: 0; */
 }
 .project-slideshow:after {
     content: '';
 }
 .project-slideshow li span {
-    width: 15%;
+    /* width: 15%;
     height: 15%;
-    /* position: absolute; */
+    position: absolute;
     top: 0px;
-    left: 0px;
+    left: 0px; */
     color: transparent;
     background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
+    /* background-position: 50% 50%;
+    background-repeat: none; */
     opacity: 0;
-    z-index: 0;
+    /* z-index: 0; */
     animation: imageAnimation 18s linear infinite 0s;
     animation-play-state: running;
+    height: 150px;
+    width:267px;
+    display: inline-block;
+    width: 1fr;
+    position: fixed;
 }
 .project-slideshow li div {
-    z-index: 1000;
-    /* position: absolute; */
-    bottom: 1%;
-    left: 0px;
-    width: 100%;
+    /* z-index: 1000; */
+    position: absolute;
+    /* bottom: 1%; */
+    /* left: 0px; */
+    /* width: 100%; */
     text-align: center;
     opacity: 0;
     color: #fff;
     animation: titleAnimation 18s linear infinite 0s;
     visibility: hidden;
     animation-play-state: running;
+    padding-left:50px;
+    padding-top:126px;
 }
 .project-slideshow li div h3 {
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
@@ -138,6 +161,10 @@ ul{
 }
 .project-slideshow li:nth-child(3) div {
     animation-delay: 12s;
+}
+.projectsHeader{
+    display:inline;
+    padding-left:75px
 }
 
 @keyframes imageAnimation {
@@ -173,7 +200,7 @@ ul{
     width:25%;
 }
 .credits {
-    /* position:fixed; */
+    position:fixed;
     bottom:0%;
 }
 .playPauseButton{
@@ -181,5 +208,5 @@ ul{
     background-size:cover;
     height: 20px;
     width: 20px;
-    padding-top:5%;
+    padding-top:12%;
 }
