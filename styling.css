@@ -35,12 +35,12 @@ ul{
 }
 .siteWrapper h1{
     padding-top:3%;
-    padding-left:13%;
+    padding-left:14%;
 }
 .aboutMeWrapper{
     display:inline-block;
     width: 25%;
-    padding-left:6%;
+    padding-left:9%;
     /* overflow:scroll; look into how to change default scroll bars */
 }
 .aboutMeWrapper p {
