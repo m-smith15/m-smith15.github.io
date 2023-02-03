@@ -55,12 +55,13 @@ ul{
     background-color:#ddf4e2;
     opacity: .9;
     border-radius:10%;
+    width:385.6px;
 }
 .contentWrapper {
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top:5%;
+    padding-top:3%;
 }
 
 .contentWrapper h2{
@@ -180,6 +181,9 @@ ul{
     17% { opacity: 1 }
     19% { opacity: 0; visibility: hidden;}
     100% { opacity: 0 }
+}
+.socialsHeader{
+    padding-bottom:10px;
 }
 .socialsImages{
     /* position:fixed; */
