@@ -40,5 +40,9 @@ const pauseAnimations = () => {
     buttonImage.style.backgroundImage = "url('assets/project_images/play.png')";
 }
 
+// const test = () => {
+//     alert('hello!');
+// }
+
 //todo: add in a resume function
 //maybe create a var on load that sets to running and have ternary operator if user clicks pause/resume?
