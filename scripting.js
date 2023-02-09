@@ -9,6 +9,9 @@ for(var x = 1; x  < 4; x++){ //start at 1 since :nth-child isn't index 0
     titleAnimation.push(tempTitle);
 }
 
+var about_me = document.querySelector('.aboutMeWrapper');
+var OAH_about = document.querySelector('.OAH_container');
+
 // decision based on the buttons image
 const updateAnimations = () => {
     if(buttonImage.style.backgroundImage == '' || buttonImage.style.backgroundImage == "url(\"assets/project_images/pause.png\")"){
@@ -39,6 +42,19 @@ const pauseAnimations = () => {
     })
     buttonImage.style.backgroundImage = "url('assets/project_images/play.png')";
 }
+
+const OAH_Details = () => {
+    OAH_about.style ="animation: fadeInDetails 1s linear forwards;"
+    about_me.style = "animation: fadeOutDetails 1s linear 0s;"
+    updateAnimations();
+}
+
+const return_AboutMe = () => {
+    about_me.style ="animation: fadeInDetails 1s linear forwards;"
+    OAH_about.style = "animation: fadeOutDetails 1s linear 0s;"
+    updateAnimations();
+}
+
 
 // const test = () => {
 //     alert('hello!');
