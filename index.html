@@ -34,6 +34,20 @@
             </p>
 <button onClick={return_AboutMe()}>Resume Slideshow</button>
         </div>
+        <div class="CB_container">
+            <p>
+                CHARACTER BUILDER ABOUT GOES HERE <br/>
+                BIG TAKEAWAYS FROM THE PROJECT GO HERE. <br/>
+            </p>
+<button onClick={return_AboutMe()}>Resume Slideshow</button>
+        </div>
+        <div class="WDF_container">
+            <p>
+                WDF ABOUT GOES HERE<br/>
+                BIG TAKEAWAYS FROM THE PROJECT GO HERE. <br/>
+            </p>
+<button onClick={return_AboutMe()}>Resume Slideshow</button>
+        </div>
     </div>
         <!-- cloud info End-->
         <div class="contentWrapper">
@@ -46,7 +60,7 @@
                         <span>Offline Auction House</span>
                         <div>
                             <h3>
-                                <button onClick={OAH_Details()}>
+                                <button id="OAH_Project"onClick={show_details(this.id)}>
                                     Python - Offline Auction House
                                     <a href="https://github.com/m-smith15/Projects/tree/master/Python/wow_ah_project" target="_blank">
                                     </a>
@@ -58,9 +72,9 @@
                         <span>DoS Character Builder</span>
                         <div>
                             <h3>
-                                <button>
+                                <button id="CB_Project"onClick={show_details(this.id)}>
+                                    Java - Character Builder
                                     <a href="https://github.com/m-smith15/Projects/tree/master/Java" target="_blank">
-                                        Java - Character Builder
                                     </a>
                                 </button>
                             </h3>
@@ -70,9 +84,9 @@
                         <span>WebDev Flashcards</span>
                         <div>
                             <h3>
-                                <button>
+                                <button id="WDF_Project"onClick={show_details(this.id)}>
+                                    MERN - WebDev Flashcards
                                     <a href="https://github.com/m-smith15/webdev_flashcards" target="_blank">
-                                        MERN - WebDev Flashcards
                                     </a>
                                 </button>
                             </h3>
