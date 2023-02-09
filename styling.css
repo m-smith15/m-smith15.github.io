@@ -106,6 +106,7 @@ ul{
     animation-play-state: running;
     padding-left:50px;
     padding-top:126px;
+    z-index:100;
 }
 .project-slideshow li div h3 {
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
