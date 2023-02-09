@@ -11,6 +11,12 @@ for(var x = 1; x  < 4; x++){ //start at 1 since :nth-child isn't index 0
 
 var about_me = document.querySelector('.aboutMeWrapper');
 var OAH_about = document.querySelector('.OAH_container');
+var CB_about = document.querySelector('.CB_container');
+var WDF_about = document.querySelector('.WDF_container');
+
+// var OAH_return = document.querySelector('#OAH_return');
+// var CB_return = document.querySelector('#CB_return');
+// var WDF_return = document.querySelector('#WDF_return');
 
 // decision based on the buttons image
 const updateAnimations = () => {
@@ -43,15 +49,38 @@ const pauseAnimations = () => {
     buttonImage.style.backgroundImage = "url('assets/project_images/play.png')";
 }
 
-const OAH_Details = () => {
-    OAH_about.style ="animation: fadeInDetails 1s linear forwards;"
+const show_details = (id) => {
+    let project_id = id.slice(0,3);
+    console.log(project_id);
+    if(project_id == "OAH"){
+        project_id = OAH_about;
+    } else if(project_id == "CB_"){
+        project_id = CB_about;
+    } else {
+        project_id = WDF_about;
+    }
+
+    console.log(project_id);
+    project_id.style ="animation: fadeInDetails 1s linear forwards;"
     about_me.style = "animation: fadeOutDetails 1s linear 0s;"
     updateAnimations();
 }
 
-const return_AboutMe = () => {
+const return_AboutMe = (id) => {
+    console.log(id)
+    let return_id = id.slice(0,3);
+console.log(return_id);
+    if(return_id == "OAH"){
+        return_id = OAH_about;
+    } else if(return_id == "CB_"){
+        return_id = CB_about;
+    } else {
+        return_id = WDF_about;
+    }
+    console.log(return_id);
+
     about_me.style ="animation: fadeInDetails 1s linear forwards;"
-    OAH_about.style = "animation: fadeOutDetails 1s linear 0s;"
+    return_id.style = "animation: fadeOutDetails 1s linear 0s;"
     updateAnimations();
 }
 
