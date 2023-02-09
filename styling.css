@@ -11,83 +11,126 @@
         background-repeat: no-repeat;
         background-position-y: 38%; */
 
-*{
-padding:0;
-margin:0;
-}
-body {
-    color: Lightgrey;
-    font-weight:bold;
-    overflow: hidden;
-}
-h1{
-    color:lightgray;
-}
-ul{
-    list-style:none;
-}
-.background{
-    z-index: -1;
-}
-.siteWrapper{
-    background: url('assets/island_house.jpg') no-repeat;
-    height:1920px;
-}
-.siteWrapper h1{
-    padding-top:3%;
-    padding-left:14%;
-}
-.aboutMeWrapper{
-    padding-left:9%;
-    animation: fadeInDetails 1s linear forwards;
-    visibility:visible;
-    /* overflow:scroll; look into how to change default scroll bars */
-}
-.aboutMeWrapper p {
-    text-align:center;
-    line-height:120%;
-    color:black;
-    background-color:#ddf4e2;
-    opacity: .9;
-    border-radius:10%;
-    width:385.6px;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.OAH_container{
-    padding-left:9%;
-    animation: fadeOutDetails 1s linear 0s;
-    visibility:hidden;
+body {
+    color: Lightgrey;
+    font-weight: bold;
+    overflow: hidden;
 }
-.OAH_container p {
-    text-align:center;
-    line-height:120%;
-    color:black;
-    background-color:#ddf4e2;
-    background-color:steelblue; /* delete me */
-    /* animation: fadeInDetails 1s linear 0s; */
+
+h1 {
+    color: lightgray;
+}
+
+ul {
+    list-style: none;
+}
+
+.background {
+    z-index: -1;
+}
+
+.siteWrapper {
+    background: url('assets/island_house.jpg') no-repeat;
+    height: 1920px;
+}
+
+.siteWrapper h1 {
+    padding-top: 3%;
+    padding-left: 14%;
+}
+
+.aboutMeWrapper {
+    padding-left: 9%;
+    animation: fadeInDetails 1s linear forwards;
+    visibility: visible;
+    /* overflow:scroll; look into how to change default scroll bars */
+}
+
+.aboutMeWrapper p {
+    text-align: center;
+    line-height: 120%;
+    color: black;
+    background-color: #cbb0dd;
     opacity: .9;
-    border-radius:10%;
-    width:385.6px;
-    height:345.6px;
+    border-radius: 10%;
+    width: 385.6px;
+}
+
+/* groupings are a little gnarly */
+.OAH_container,
+.CB_container,
+.WDF_container {
+    padding-left: 9%;
+    animation: fadeOutDetails 1s linear 0s;
+    visibility: hidden;
+}
+
+.OAH_container p,
+.CB_container p,
+.WDF_container p {
+    text-align: center;
+    line-height: 120%;
+    color: black;
+    background-color: #cbb0dd;
+    /* background-color:steelblue; delete me */
+    /* animation: fadeInDetails 1s linear 0s; */
+    /* opacity: .9; */
+    border-radius: 10%;
+    width: 385.6px;
+    height: 345.6px;
+}
+
+.OAH_container button,
+.CB_container button,
+.WDF_container button {
+    position: relative;
+    bottom: 10%;
+    left: 2%;
+    background-color: #b645d3;
+    padding: 2px;
+    border: solid black 2px;
+    color: lightgrey;
 }
 
 @keyframes fadeInDetails {
-    0% { opacity: 0; }
-    100% { opacity: 1; visibility: visible;}
+    0% {
+        opacity: 0;
     }
 
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 @keyframes fadeOutDetails {
-    0% { opacity: 1;}
-    90% { opacity: 0; visibility:hidden;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 /* "cloud" wrapper */
 .cloudInfo {
-        display: grid;
-        grid-template: 1fr / 1fr;
+    display: grid;
+    grid-template: 1fr / 1fr;
 }
-.cloudInfo > * {
+
+.cloudInfo>* {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
 }
@@ -96,24 +139,26 @@ ul{
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top:3%;
+    padding-top: 3%;
 }
 
-.contentWrapper h2{
-    text-align:center;
-    font-weight:bold;
-    font-style:italic;
-    color:black;
+.contentWrapper h2 {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
 }
 
-.contentWrapper .aboutMe{
+.contentWrapper .aboutMe {
     left: 10%;
-    top:13%
+    top: 13%
 }
-.projects{
-    display:flex;
-    flex-flow:column nowrap;
+
+.projects {
+    display: flex;
+    flex-flow: column nowrap;
 }
+
 .project-slideshow,
 .project-slideshow:after {
     width: 15%;
@@ -121,9 +166,11 @@ ul{
     top: 53%;
     left: 10%;
 }
+
 .project-slideshow:after {
     content: '';
 }
+
 .project-slideshow li span {
     color: transparent;
     background-size: cover;
@@ -131,11 +178,12 @@ ul{
     animation: imageAnimation 18s linear infinite 0s;
     animation-play-state: running;
     height: 150px;
-    width:267px;
+    width: 267px;
     display: inline-block;
     width: 1fr;
     position: fixed;
 }
+
 .project-slideshow li div {
     position: absolute;
     text-align: center;
@@ -144,10 +192,11 @@ ul{
     animation: titleAnimation 18s linear infinite 0s;
     visibility: hidden;
     animation-play-state: running;
-    padding-left:50px;
-    padding-top:126px;
-    z-index:100;
+    padding-left: 50px;
+    padding-top: 126px;
+    z-index: 100;
 }
+
 .project-slideshow li div h3 {
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
@@ -157,10 +206,12 @@ ul{
 .project-slideshow li:nth-child(1) span {
     background-image: url('assets/project_images/ironforge-auctionhouse.jpg');
 }
+
 .project-slideshow li:nth-child(2) span {
     background-image: url('assets/project_images/dos_background.jpg');
     animation-delay: 6s;
 }
+
 .project-slideshow li:nth-child(3) span {
     background-image: url('assets/project_images/typewriter_wallpaper\(1920x1080\).jpg');
     animation-delay: 12s;
@@ -169,54 +220,95 @@ ul{
 .project-slideshow li:nth-child(2) div {
     animation-delay: 6s;
 }
+
 .project-slideshow li:nth-child(3) div {
     animation-delay: 12s;
 }
-.projectsHeader{
-    display:inline;
-    padding-left:75px
+
+.projectsHeader {
+    display: inline;
+    padding-left: 75px
 }
 
 @keyframes imageAnimation {
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out;}
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@keyframes titleAnimation {
-    0% { opacity: 0 }
-    8% { opacity: 1; visibility: visible;}
-    17% { opacity: 1 }
-    19% { opacity: 0; visibility: hidden;}
-    100% { opacity: 0 }
-}
-.socialsHeader{
-    padding-bottom:10px;
-}
-.socialsImages{
-    text-align:center;
-}
-.socialsImages img{
-    width:12%;
-    border:solid 2px black;
-}
-.resumeImage{
-    text-align:center;
-}
-.resumeImage img {
-    width:25%;
-}
-.credits {
-    position:fixed;
-    bottom:0%;
-    color:black;
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    8% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+
+    17% {
+        opacity: 1
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
-.playPauseButton{
+@keyframes titleAnimation {
+    0% {
+        opacity: 0
+    }
+
+    8% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    17% {
+        opacity: 1
+    }
+
+    19% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.socialsHeader {
+    padding-bottom: 10px;
+}
+
+.socialsImages {
+    text-align: center;
+}
+
+.socialsImages img {
+    width: 12%;
+    border: solid 2px black;
+}
+
+.resumeImage {
+    text-align: center;
+}
+
+.resumeImage img {
+    width: 25%;
+}
+
+.credits {
+    position: fixed;
+    bottom: 0%;
+    color: black;
+}
+
+.playPauseButton {
     background-image: url('assets/project_images/pause.png');
-    background-size:cover;
+    background-size: cover;
     height: 20px;
     width: 20px;
-    padding-top:12%;
+    padding-top: 12%;
 }
