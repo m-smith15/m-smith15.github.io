@@ -38,9 +38,9 @@ ul{
     padding-left:14%;
 }
 .aboutMeWrapper{
-    display:inline-block;
-    width: 25%;
     padding-left:9%;
+    animation: fadeInDetails 1s linear forwards;
+    visibility:visible;
     /* overflow:scroll; look into how to change default scroll bars */
 }
 .aboutMeWrapper p {
@@ -52,6 +52,46 @@ ul{
     border-radius:10%;
     width:385.6px;
 }
+
+.OAH_container{
+    padding-left:9%;
+    animation: fadeOutDetails 1s linear 0s;
+    visibility:hidden;
+}
+.OAH_container p {
+    text-align:center;
+    line-height:120%;
+    color:black;
+    background-color:#ddf4e2;
+    background-color:steelblue; /* delete me */
+    /* animation: fadeInDetails 1s linear 0s; */
+    opacity: .9;
+    border-radius:10%;
+    width:385.6px;
+    height:345.6px;
+}
+
+@keyframes fadeInDetails {
+    0% { opacity: 0; }
+    100% { opacity: 1; visibility: visible;}
+    }
+
+@keyframes fadeOutDetails {
+    0% { opacity: 1;}
+    90% { opacity: 0; visibility:hidden;}
+    100% {opacity: 0;}
+}
+
+/* "cloud" wrapper */
+.cloudInfo {
+        display: grid;
+        grid-template: 1fr / 1fr;
+}
+.cloudInfo > * {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
 .contentWrapper {
     justify-items: center;
     display: grid;
@@ -170,7 +210,9 @@ ul{
 .credits {
     position:fixed;
     bottom:0%;
+    color:black;
 }
+
 .playPauseButton{
     background-image: url('assets/project_images/pause.png');
     background-size:cover;

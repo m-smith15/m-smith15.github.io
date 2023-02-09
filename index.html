@@ -14,6 +14,7 @@
 <body>
     <div class="siteWrapper">
         <h1 class="aboutMeHeader">Hi, I'm Mack. <br /></h1>
+        <div class="cloudInfo">
         <div class="aboutMeWrapper">
             <p>
                 I'm a full stack developer. <br>
@@ -26,7 +27,15 @@
                 I'm always learning, discovering, and tinkering!
             </p>
         </div>
-        <!-- about section End-->
+        <div class="OAH_container">
+            <p>
+                The offline auction house was a personal project I started while attending a coding bootcamp. I have since polished it up a bit and have deployed it. <br/>
+                Some of the big takeaways from the project were working with environment variables, working with OAUTH tokens, consuming APIs, along with working with large JSON objects. <br/>
+
+            </p>
+        </div>
+    </div>
+        <!-- cloud info End-->
         <div class="contentWrapper">
             <div class="projects">
                 <h2 class="projectsHeader">Projects
@@ -37,9 +46,9 @@
                         <span>Offline Auction House</span>
                         <div>
                             <h3>
-                                <button>
+                                <button onClick={OAH_Details()}>
+                                    Python - Offline Auction House
                                     <a href="https://github.com/m-smith15/Projects/tree/master/Python/wow_ah_project" target="_blank">
-                                        Python - Offline Auction House
                                     </a>
                                 </button>
                             </h3>
@@ -89,18 +98,24 @@
             <div class="resume">
                 <h2 class="resumeHeader">Resume</h2>
                 <div class="resumeImage">
-                    <a href="assets/project_images/downloads/macksmith_resume_pdf.pdf" download target="_blank"><img
-                            src="assets/project_images/resume_icon.png" alt="resume"></a>
+                    <a href="assets/project_images/downloads/macksmith_resume_pdf.pdf" download target="_blank">
+                        <img src="assets/project_images/resume_icon.png" alt="resume"></a>
                 </div>
             </div>
             <!-- Resume End -->
 
-
             <!-- Content Wrapper End -->
         </div>
-        <div class="credits">Favicon created by
-            <a href="https://www.flaticon.com/free-icons/artist" target="_blank" title="artist icons">Freepik -
-                Flaticon</a>
+        <div class="credits">
+            <div class="favicon_credit">
+                        Favicon created by
+                        <a href="https://www.flaticon.com/free-icons/artist" target="_blank" title="artist icons">
+                            Freepik - Flaticon
+                        </a>
+                    </div>
+            <div class="madeBy">
+                Handcrafted with <3 by Mack Smith using vanilla HTML, CSS, JavaScript.
+            </div>
         </div>
 
         <!-- site wrapper end -->
