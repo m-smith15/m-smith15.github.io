@@ -64,7 +64,7 @@ ul {
 .projectButtonWrapper {
     display: flex;
     position: relative;
-    bottom: 25%;
+    bottom: 16%;
     justify-content: space-around;
     align-items: center;
 }
@@ -99,7 +99,7 @@ ul {
 .CB_container button,
 .WDF_container button {
     position: relative;
-    bottom: 10%;
+    /* bottom: 10%; */
     left: 3%;
     background-color: #567391;
     padding: 2px;
