@@ -1,5 +1,5 @@
 ## Profile Page
-  - This is my profile page to share with others in a single pane of glass.
+  - This is my profile page to share with others in a single pane of glass: https://m-smith15.github.io/
     - A few big goals I wanted to accomplish with this: 
         - I'd like to make this full stack at some point (I mean I do want to be a full stack developer at some point...)
           - I talk a bit about how I found a passion for coding from a simple step about building a burger. I'd like to add in something akin to what I first built at some point.
