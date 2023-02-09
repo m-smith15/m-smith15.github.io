@@ -61,6 +61,14 @@ ul {
     width: 385.6px;
 }
 
+.projectButtonWrapper {
+    display: flex;
+    position: relative;
+    bottom: 25%;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* groupings are a little gnarly */
 .OAH_container,
 .CB_container,
@@ -68,6 +76,8 @@ ul {
     padding-left: 9%;
     animation: fadeOutDetails 1s linear 0s;
     visibility: hidden;
+    height:345.6px;
+    width: 385.6px;
 }
 
 .OAH_container p,
@@ -90,11 +100,13 @@ ul {
 .WDF_container button {
     position: relative;
     bottom: 10%;
-    left: 2%;
-    background-color: #b645d3;
+    left: 3%;
+    background-color: #567391;
     padding: 2px;
     border: solid black 2px;
     color: lightgrey;
+    height: 28px;
+    position: center;
 }
 
 @keyframes fadeInDetails {

@@ -15,40 +15,58 @@
     <div class="siteWrapper">
         <h1 class="aboutMeHeader">Hi, I'm Mack. <br /></h1>
         <div class="cloudInfo">
-        <div class="aboutMeWrapper">
-            <p>
-                I'm a full stack developer. <br>
-                In 2022 I realized something needed to change but I wasn't quite sure what or how - so I changed
-                everything. I took a leap of faith and embarked to reinvent myself. <br /><br /> Eventually, I found my
-                love of coding through burger toppings.<br /> <br/>
-                In a course I was taking online, there was a step to list a few burger toppings. That was the spark that started my journey. My mind took off at the idea of giving users the option to share with me their ideal burger. <br /><br />
-                Since then, I've continued to tinker with coding almost every day - eventually enrolling and completing
-                a Coding Bootcamp through Coding Dojo. <br/><br/>
-                I'm always learning, discovering, and tinkering!
-            </p>
+            <div class="aboutMeWrapper">
+                <p>
+                    I'm a full stack developer. <br>
+                    In 2022 I realized something needed to change but I wasn't quite sure what or how - so I changed
+                    everything. I took a leap of faith and embarked to reinvent myself. <br /><br /> Eventually, I found
+                    my
+                    love of coding through burger toppings.<br /> <br />
+                    In a course I was taking online, there was a step to list a few burger toppings. That was the spark
+                    that started my journey. My mind took off at the idea of giving users the option to share with me
+                    their ideal burger. <br /><br />
+                    Since then, I've continued to tinker with coding almost every day - eventually enrolling and
+                    completing
+                    a Coding Bootcamp through Coding Dojo. <br /><br />
+                    I'm always learning, discovering, and tinkering!
+                </p>
+            </div>
+            <div class="OAH_container">
+                <p>
+                    The offline auction house was a personal project I started while attending a coding bootcamp. I have
+                    since polished it up a bit and have deployed it. <br />
+                    Some of the big takeaways from the project were working with environment variables, working with
+                    OAUTH tokens, consuming APIs, along with working with large JSON objects. <br />
+                </p>
+                <div class="projectButtonWrapper">
+                <button id="OAH_return" onClick={return_AboutMe(this.id)}>Go Back</button>
+                <a href="https://github.com/m-smith15/Projects/tree/master/Python/wow_ah_project" target="_blank">
+                    <img src="assets/project_images/github_icon.png" style="height:50px; width:50px;"></a>
+                </div>
+                </div>
+            <div class="CB_container">
+                <p>
+                    CHARACTER BUILDER ABOUT GOES HERE <br />
+                    BIG TAKEAWAYS FROM THE PROJECT GO HERE. <br />
+                </p>
+                <div class="projectButtonWrapper">
+                    <button id="CB_return" onClick={return_AboutMe(this.id)}>Go Back</button>
+                    <a href="https://github.com/m-smith15/Projects/tree/master/Java" target="_blank">
+                        <img src="assets/project_images/github_icon.png" style="height:50px; width:50px;"></a>
+                    </div>
+                    </div>
+            <div class="WDF_container">
+                <p>
+                    WDF ABOUT GOES HERE<br />
+                    BIG TAKEAWAYS FROM THE PROJECT GO HERE. <br />
+                </p>
+                <div class="projectButtonWrapper">
+                    <button id="WDF_return" onClick={return_AboutMe(this.id)}>Go Back</button>
+                    <a href="https://github.com/m-smith15/webdev_flashcards" target="_blank">
+                        <img src="assets/project_images/github_icon.png" style="height:50px; width:50px;"></a>
+                    </div>
+                    </div>
         </div>
-        <div class="OAH_container">
-            <p>
-                The offline auction house was a personal project I started while attending a coding bootcamp. I have since polished it up a bit and have deployed it. <br/>
-                Some of the big takeaways from the project were working with environment variables, working with OAUTH tokens, consuming APIs, along with working with large JSON objects. <br/>
-            </p>
-<button id="OAH_return" onClick={return_AboutMe(this.id)}>Resume Slideshow</button>
-        </div>
-        <div class="CB_container">
-            <p>
-                CHARACTER BUILDER ABOUT GOES HERE <br/>
-                BIG TAKEAWAYS FROM THE PROJECT GO HERE. <br/>
-            </p>
-<button id="CB_return" onClick={return_AboutMe(this.id)}>Resume Slideshow</button>
-        </div>
-        <div class="WDF_container">
-            <p>
-                WDF ABOUT GOES HERE<br/>
-                BIG TAKEAWAYS FROM THE PROJECT GO HERE. <br/>
-            </p>
-<button id="WDF_return" onClick={return_AboutMe(this.id)}>Resume Slideshow</button>
-        </div>
-    </div>
         <!-- cloud info End-->
         <div class="contentWrapper">
             <div class="projects">
@@ -60,9 +78,10 @@
                         <span>Offline Auction House</span>
                         <div>
                             <h3>
-                                <button id="OAH_Project"onClick={show_details(this.id)}>
+                                <button id="OAH_Project" onClick={show_details(this.id)}>
                                     Python - Offline Auction House
-                                    <a href="https://github.com/m-smith15/Projects/tree/master/Python/wow_ah_project" target="_blank">
+                                    <a href="https://github.com/m-smith15/Projects/tree/master/Python/wow_ah_project"
+                                        target="_blank">
                                     </a>
                                 </button>
                             </h3>
@@ -72,7 +91,7 @@
                         <span>DoS Character Builder</span>
                         <div>
                             <h3>
-                                <button id="CB_Project"onClick={show_details(this.id)}>
+                                <button id="CB_Project" onClick={show_details(this.id)}>
                                     Java - Character Builder
                                     <a href="https://github.com/m-smith15/Projects/tree/master/Java" target="_blank">
                                     </a>
@@ -84,7 +103,7 @@
                         <span>WebDev Flashcards</span>
                         <div>
                             <h3>
-                                <button id="WDF_Project"onClick={show_details(this.id)}>
+                                <button id="WDF_Project" onClick={show_details(this.id)}>
                                     MERN - WebDev Flashcards
                                     <a href="https://github.com/m-smith15/webdev_flashcards" target="_blank">
                                     </a>
@@ -122,18 +141,17 @@
         </div>
         <div class="credits">
             <div class="favicon_credit">
-                        Favicon created by
-                        <a href="https://www.flaticon.com/free-icons/artist" target="_blank" title="artist icons">
-                            Freepik - Flaticon
-                        </a>
-                    </div>
-            <div class="madeBy">
-                Handcrafted with <3 by Mack Smith using vanilla HTML, CSS, JavaScript.
+                Favicon created by
+                <a href="https://www.flaticon.com/free-icons/artist" target="_blank" title="artist icons">
+                    Freepik - Flaticon
+                </a>
             </div>
-        </div>
+            <div class="madeBy">
+                Handcrafted with <3 by Mack Smith using vanilla HTML, CSS, JavaScript. </div>
+            </div>
 
-        <!-- site wrapper end -->
-    </div>
+            <!-- site wrapper end -->
+        </div>
 
 
 </body>
